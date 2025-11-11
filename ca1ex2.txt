@@ -1,0 +1,14 @@
+git status
+git add .
+git commit -m "first commit"
+git branch feature-local-test
+git checkout feature-local-test
+git add cloud.py
+git commit -m "added more text in cloud.py"
+git checkout main
+git add cloud.py
+git commit -m "added more text in cloud.py in main branch"
+git merge feature-local-test
+git remote add origin https://github.com/garflo468/ca1ex2-repo.git
+git push -u origin main
+git pull
